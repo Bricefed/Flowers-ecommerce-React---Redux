@@ -2,6 +2,7 @@ import Navigation from "./components/Navigation/Navigation";
 import About from "./containers/About";
 import Home from "./containers/Home";
 import Icons from "./containers/Icons";
+import Products from "./containers/Products";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Home />
         <About />
         <Icons />
+        <Products />
       </main>
     </>
   );

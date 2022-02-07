@@ -1,28 +1,16 @@
 import Icon from "../components/Icons/Icon";
+import { dataIcon } from "../components/Icons/data/icon.js";
 
 export default function Icons() {
-  return (
-    <section className="icons-container">
+  const item = (item) => {
+    return (
       <Icon
-        img="assets/illustrations/icon-1.png"
-        title="Livraison gratuite"
-        subtitle="Sur toutes les commandes"
+        key={item.id}
+        img={item.img}
+        title={item.title}
+        subtitle={item.subtitle}
       />
-      <Icon
-        img="assets/illustrations/icon-2.png"
-        title="Retours sous 10 jours"
-        subtitle="Remboursement garentie"
-      />
-      <Icon
-        img="assets/illustrations/icon-3.png"
-        title="Offre &amp; cadeaux"
-        subtitle="Sur toutes les commandes"
-      />
-      <Icon
-        img="assets/illustrations/icon-4.png"
-        title="Paiements sécurisés"
-        subtitle="Protégé par paypal"
-      />
-    </section>
-  );
+    );
+  };
+  return <section className="icons-container">{dataIcon.map(item)}</section>;
 }

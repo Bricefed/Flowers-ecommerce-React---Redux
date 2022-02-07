@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { MenuContext } from "../../contexts/MenuContext";
-import { links } from "./data/links";
+import { dataLinks } from "./data/links";
 
 export default function Links() {
   const { toggler } = useContext(MenuContext);
@@ -15,7 +15,7 @@ export default function Links() {
 
   return (
     <nav className={toggler ? "navigation active" : "navigation"}>
-      {links.map(items)}
+      {dataLinks.map(items)}
     </nav>
   );
 }

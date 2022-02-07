@@ -1,0 +1,9 @@
+.products {
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    @import "./card";
+  }
+}
