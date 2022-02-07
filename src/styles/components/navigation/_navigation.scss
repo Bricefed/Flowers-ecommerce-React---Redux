@@ -11,10 +11,6 @@ header {
   z-index: 1000;
   @include box-shadow(0.1);
 
-  @media screen and (max-width: $tablet) {
-    padding: 2rem;
-  }
-
   @import "./burger";
   @import "./logo";
   @import "./links";

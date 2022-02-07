@@ -7,7 +7,12 @@
 @import "./base/reset";
 
 // CONTAINERS
-@import "./containers/home";
+@import "./containers/home/home";
 
 // COMPONENTS
 @import "./components/navigation/navigation";
+
+// RESPONSIVE
+@import "./responsives/tablet/tablet";
+@import "./responsives/phones/phone-xl";
+@import "./responsives/phones/phone";

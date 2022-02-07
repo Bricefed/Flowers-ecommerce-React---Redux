@@ -15,14 +15,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
   overflow-x: hidden;
-
-  @media screen and (max-width: $tablet) {
-    font-size: 55%;
-  }
-
-  @media screen and (max-width: $phone) {
-    font-size: 50%;
-  }
 }
 
 a {

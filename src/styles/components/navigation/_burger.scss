@@ -7,9 +7,5 @@
   &-bars {
     display: none;
     border-radius: 0.5rem;
-
-    @media screen and (max-width: $phone-xl) {
-      display: block;
-    }
   }
 }
