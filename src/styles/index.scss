@@ -8,9 +8,11 @@
 
 // CONTAINERS
 @import "./containers/home/home";
+@import "./containers/about/about";
 
 // COMPONENTS
 @import "./components/navigation/navigation";
+@import "./components/titles/heading";
 
 // RESPONSIVE
 @import "./responsives/tablet/tablet";

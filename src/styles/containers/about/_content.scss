@@ -1,0 +1,15 @@
+.content {
+  flex: 1 1 40rem;
+
+  h3 {
+    font-size: 3rem;
+    color: $dark-3;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: $dark-9;
+    padding: 1rem 0;
+    line-height: 1.5;
+  }
+}

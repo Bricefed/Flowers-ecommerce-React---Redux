@@ -1,0 +1,12 @@
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: $dark-3;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: $light-pink;
+
+  span {
+    color: $pink;
+  }
+}

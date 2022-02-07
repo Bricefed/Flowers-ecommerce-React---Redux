@@ -1,11 +1,16 @@
 import Navigation from "./components/Navigation/Navigation";
+import About from "./containers/About";
 import Home from "./containers/Home";
 
 function App() {
   return (
     <>
       <Navigation />
-      <Home />
+
+      <main>
+        <Home />
+        <About />
+      </main>
     </>
   );
 }
