@@ -1,0 +1,50 @@
+body,
+body::before,
+body::after,
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem <=> 10px
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea,
+input,
+button {
+  font-family: inherit;
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+button {
+  background: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.6rem;
+}
