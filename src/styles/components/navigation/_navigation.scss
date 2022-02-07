@@ -1,0 +1,22 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 2rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  @include box-shadow(0.1);
+
+  @media screen and (max-width: $tablet) {
+    padding: 2rem;
+  }
+
+  @import "./burger";
+  @import "./logo";
+  @import "./links";
+  @import "./icons";
+}

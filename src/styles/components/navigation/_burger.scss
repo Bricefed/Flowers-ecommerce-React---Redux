@@ -1,0 +1,15 @@
+.fa {
+  font-size: 3rem;
+  color: $dark-3;
+  padding: 0.5em 1.5rem;
+  cursor: pointer;
+
+  &-bars {
+    display: none;
+    border-radius: 0.5rem;
+
+    @media screen and (max-width: $phone-xl) {
+      display: block;
+    }
+  }
+}

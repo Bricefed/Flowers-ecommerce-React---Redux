@@ -1,0 +1,13 @@
+// UTILS
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/reusable";
+
+// BASES
+@import "./base/reset";
+
+// CONTAINERS
+@import "./containers/home";
+
+// COMPONENTS
+@import "./components/navigation/navigation";

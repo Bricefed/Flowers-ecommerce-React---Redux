@@ -1,0 +1,4 @@
+// SHADOW
+@mixin box-shadow($power) {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, $power);
+}

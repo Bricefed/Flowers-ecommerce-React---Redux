@@ -1,5 +1,13 @@
+import Navigation from "./components/Navigation/Navigation";
+// import Home from "./containers/Home";
+
 function App() {
-  return <div>APP page</div>;
+  return (
+    <>
+      <Navigation />
+      {/* <Home /> */}
+    </>
+  );
 }
 
 export default App;

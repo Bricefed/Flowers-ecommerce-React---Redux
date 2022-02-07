@@ -1,0 +1,13 @@
+.icons {
+  display: flex;
+
+  a {
+    font-size: 2.5rem;
+    color: $dark-3;
+    margin-left: 1.5rem;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+}
