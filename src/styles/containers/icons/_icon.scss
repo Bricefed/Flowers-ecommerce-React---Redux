@@ -1,0 +1,26 @@
+.icons {
+  background: white;
+  border: 0.1rem solid $black-shadow-1;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1 25rem;
+
+  img {
+    height: 5rem;
+    margin-right: 2rem;
+  }
+
+  .info {
+    h3 {
+      color: $dark-3;
+      padding-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    span {
+      color: $dark-5;
+      font-size: 1.3rem;
+    }
+  }
+}

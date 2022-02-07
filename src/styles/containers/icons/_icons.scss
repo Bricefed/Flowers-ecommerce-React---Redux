@@ -1,0 +1,10 @@
+section.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background: $white-e;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  @import "./icon";
+}
