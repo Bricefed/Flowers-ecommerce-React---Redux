@@ -1,0 +1,13 @@
+.card {
+  position: relative;
+  flex: 1 1 30rem;
+  @include box-shadow(0.1);
+  border-radius: 0.5rem;
+  padding: 3rem 2rem;
+  border: 0.1rem solid $black-shadow-1;
+
+  @import "./stars";
+  @import "./opinion";
+  @import "./user";
+  @import "./quote";
+}

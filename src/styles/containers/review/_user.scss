@@ -1,0 +1,25 @@
+.user {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+
+  img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+
+  .user-info {
+    h3 {
+      font-size: 2rem;
+      color: $dark-3;
+    }
+
+    span {
+      font-size: 1.5rem;
+      color: $dark-9;
+    }
+  }
+}
