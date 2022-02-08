@@ -1,0 +1,11 @@
+@media screen and (max-width: $phone-xl) {
+  // HOME
+  @import "./home/burger";
+  @import "./home/navigation";
+  @import "./home/heroes";
+  @import "./home/icons";
+  @import "./home/contact";
+
+  // PRODUCT
+  @import "./product/product";
+}

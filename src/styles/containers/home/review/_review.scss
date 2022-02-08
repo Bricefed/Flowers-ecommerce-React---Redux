@@ -1,8 +1,6 @@
 section.review {
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+  .cards-container {
+    @include display-wrap();
 
     @import "./card";
   }

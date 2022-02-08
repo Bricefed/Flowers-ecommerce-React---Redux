@@ -1,7 +1,6 @@
 section.about {
   .row {
-    display: flex;
-    align-items: center;
+    @include display("", center);
     gap: 2rem;
     flex-wrap: wrap;
     padding: 2rem 0 3rem 0;

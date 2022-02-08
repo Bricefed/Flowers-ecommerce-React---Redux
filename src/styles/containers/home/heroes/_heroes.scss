@@ -1,6 +1,5 @@
 section.heroes {
-  display: flex;
-  align-items: center;
+  @include display("", center);
   min-height: 100vh;
   background: url(../../../../../public/assets/img/home/home-bg.jpg) no-repeat;
   background-size: cover;

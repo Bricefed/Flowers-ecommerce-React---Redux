@@ -1,7 +1,5 @@
 .fa-quote-right {
-  position: absolute;
-  bottom: 3rem;
-  right: 3rem;
+  @include position(absolute, "", "", 3rem, 3rem);
+  color: $grey-3;
   font-size: 6rem;
-  color: $white-e;
 }

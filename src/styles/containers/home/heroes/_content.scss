@@ -2,21 +2,21 @@
   max-width: 50rem;
 
   h3 {
+    color: $dark-1;
     font-size: 6rem;
-    color: $dark-3;
   }
 
   span {
-    font-size: 3.5rem;
     color: $pink;
     padding: 1rem 0;
+    font-size: 3.5rem;
     line-height: 1.5;
   }
 
   p {
-    font-size: 1.5rem;
-    color: $dark-9;
+    color: $grey-2;
     padding: 1rem 0;
+    font-size: 1.5rem;
     line-height: 1.5;
   }
 }

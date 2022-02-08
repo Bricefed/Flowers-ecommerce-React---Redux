@@ -1,7 +1,5 @@
 section.product {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display(center, center);
   column-gap: 5rem;
   margin: 20rem 0 25rem;
 

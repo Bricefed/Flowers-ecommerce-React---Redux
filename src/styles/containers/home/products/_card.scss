@@ -1,9 +1,9 @@
 .card {
-  flex: 1 1 30rem;
-  @include box-shadow(0.1);
-  border-radius: 0.5rem;
-  border: 0.1rem solid $black-shadow-1;
   position: relative;
+  flex: 1 1 30rem;
+  box-shadow: $basic-shadow;
+  border: 0.1rem solid $black-shadow-1;
+  border-radius: 0.5rem;
 
   &:hover {
     .image-box {

@@ -1,19 +1,7 @@
 @media screen and (max-width: $tablet) {
-  html {
-    font-size: 55%;
-  }
-
-  section {
-    padding: 2rem;
-  }
-
-  // NAVIGATION
-  header {
-    padding: 2rem;
-  }
+  @import "./reset";
+  @import "./navigation";
 
   // PRODUCT
-  section.product {
-    column-gap: 3rem;
-  }
+  @import "./product/product";
 }

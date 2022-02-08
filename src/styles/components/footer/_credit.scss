@@ -1,11 +1,10 @@
 .credit {
-  text-align: center;
-  padding: 1.5rem;
   margin-top: 1.5rem;
-  padding-top: 2.5rem;
-  font-size: 2rem;
-  color: $dark-3;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
   border-top: 0.1rem solid $black-shadow-1;
+  color: $dark-1;
+  text-align: center;
+  font-size: 2rem;
 
   span {
     color: $pink;

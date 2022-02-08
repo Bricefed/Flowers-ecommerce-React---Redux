@@ -1,7 +1,7 @@
 // UTILS
 @import "./utils/variables";
-@import "./utils/mixins";
-@import "./utils/reusable";
+@import "./utils/mixins/mixins";
+@import "./utils/reusable/reusable";
 
 // BASES
 @import "./base/reset";
@@ -19,11 +19,10 @@
 @import "./containers/home/products/products";
 @import "./containers/home/review/review";
 @import "./containers/home/contact/contact";
-
 // PRODUCT
 @import "./containers/product/product";
 
 // RESPONSIVE
 @import "./responsives/tablet/tablet";
-@import "./responsives/phones/phone-xl";
-@import "./responsives/phones/phone";
+@import "./responsives/phone-xl/phone-xl";
+@import "./responsives/phone/phone";

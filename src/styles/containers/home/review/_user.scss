@@ -1,25 +1,23 @@
 .user {
-  display: flex;
-  align-items: center;
+  @include display("", center);
   padding-top: 2rem;
 
   img {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
+    @include same-size(6rem);
     object-fit: cover;
     margin-right: 1rem;
+    border-radius: 50%;
   }
 
   .user-info {
     h3 {
+      color: $dark-1;
       font-size: 2rem;
-      color: $dark-3;
     }
 
     span {
+      color: $grey-2;
       font-size: 1.5rem;
-      color: $dark-9;
     }
   }
 }

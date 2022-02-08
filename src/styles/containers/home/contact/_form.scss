@@ -1,13 +1,12 @@
 form {
-  display: flex;
-  flex-direction: column;
+  @include display-column();
   justify-content: center;
   flex: 1 1 40rem;
   padding: 2rem 2.5rem;
-  @include box-shadow(0.1);
+  box-shadow: $basic-shadow;
   border: 0.1rem solid $black-shadow-1;
-  background: white;
   border-radius: 0.5rem;
+  background: white;
 
   @import "./inputs";
 }

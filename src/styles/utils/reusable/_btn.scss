@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.9rem 3.5rem;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  background: $dark-1;
+  color: white;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background: $pink;
+  }
+}

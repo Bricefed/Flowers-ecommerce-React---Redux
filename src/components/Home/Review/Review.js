@@ -17,7 +17,7 @@ export default function Review() {
   return (
     <section className="review" id="review">
       <Heading span="Retour" title="clients" />
-      <div className="card-container">{dataUser.map(card)}</div>
+      <div className="cards-container">{dataUser.map(card)}</div>
     </section>
   );
 }

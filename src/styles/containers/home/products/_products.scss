@@ -1,8 +1,6 @@
-.products {
+section.products {
   .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    @include display-wrap;
 
     @import "./card";
   }

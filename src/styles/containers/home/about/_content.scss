@@ -2,14 +2,14 @@
   flex: 1 1 40rem;
 
   h3 {
+    color: $dark-1;
     font-size: 3rem;
-    color: $dark-3;
   }
 
   p {
-    font-size: 1.5rem;
-    color: $dark-9;
+    color: $grey-2;
     padding: 1rem 0;
+    font-size: 1.5rem;
     line-height: 1.5;
   }
 }

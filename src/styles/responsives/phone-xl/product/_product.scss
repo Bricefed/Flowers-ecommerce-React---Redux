@@ -1,0 +1,9 @@
+section.product {
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 5rem;
+
+  .infos-content {
+    width: 100%;
+  }
+}

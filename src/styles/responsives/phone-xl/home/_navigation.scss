@@ -1,11 +1,8 @@
 nav.navigation {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background: #eee;
+  @include position(absolute, 100%, "", "", 0);
+  @include size(100%, 0);
   border-top: 0.1rem solid $black-shadow-1;
+  background: #eee;
 
   a {
     opacity: 0;
@@ -17,15 +14,13 @@ nav.navigation {
     height: 100vh;
 
     a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include display(center, center);
       margin: 1.5rem;
       padding: 1.5rem;
+      border: 0.1rem solid $black-shadow-1;
+      background: white;
       opacity: 1;
       visibility: visible;
-      background: white;
-      border: 0.1rem solid $black-shadow-1;
     }
   }
 }
