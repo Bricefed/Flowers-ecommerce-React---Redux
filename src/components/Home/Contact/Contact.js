@@ -1,6 +1,6 @@
-import Heading from "../../components/Title/Heading";
-import Form from "../../components/Contact/Form";
-import Image from "../../components/Contact/Image";
+import Heading from "../../Title/Heading";
+import Form from "./Form";
+import Image from "./Image";
 
 export default function Contact() {
   return (

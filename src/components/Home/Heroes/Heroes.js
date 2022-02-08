@@ -1,4 +1,4 @@
-import Content from "../../components/Heroes/Content";
+import Content from "./Content";
 
 export default function Heroes() {
   return (

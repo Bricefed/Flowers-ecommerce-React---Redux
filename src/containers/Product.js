@@ -1,5 +1,5 @@
 import { useParams } from "react-router";
-import { dataProduct } from "../../components/Products/data/product";
+import { dataProduct } from "../components/Home/Products/data/product";
 
 export default function Product() {
   const productSlug = useParams();

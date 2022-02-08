@@ -1,6 +1,6 @@
-import VideoContainer from "../../components/About/VideoContainer";
-import Content from "../../components/About/Content";
-import Heading from "../../components/Title/Heading";
+import VideoContainer from "./VideoContainer";
+import Content from "./Content";
+import Heading from "../../../components/Title/Heading";
 
 export default function About() {
   return (

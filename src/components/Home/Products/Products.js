@@ -1,6 +1,6 @@
-import Card from "../../components/Products/Card";
-import Heading from "../../components/Title/Heading";
-import { dataProduct } from "../../components/Products/data/product.js";
+import Card from "./Card";
+import Heading from "../../Title/Heading";
+import { dataProduct } from "./data/product.js";
 
 export default function Products() {
   const item = (item) => {

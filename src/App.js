@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
-import Home from "./containers/Home/Home";
+import Home from "./containers/Home";
 import Footer from "./components/Footer/Footer";
-import Product from "./containers/Product/Product";
+import Product from "./containers/Product";
 
 function App() {
   return (
