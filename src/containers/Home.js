@@ -1,4 +1,3 @@
-import React from "react";
 import Contact from "../components/Home/Contact/Contact";
 import Heroes from "../components/Home/Heroes/Heroes";
 import Icons from "../components/Home/Icons/Icons";
