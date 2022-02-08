@@ -1,5 +1,5 @@
-import Icon from "../components/Icons/Icon";
-import { dataIcon } from "../components/Icons/data/icon.js";
+import Icon from "../../components/Icons/Icon";
+import { dataIcon } from "../../components/Icons/data/icon.js";
 
 export default function Icons() {
   const item = (item) => {

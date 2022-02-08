@@ -1,0 +1,13 @@
+section.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5rem;
+  margin: 20rem 0 25rem;
+
+  .image {
+    position: relative;
+  }
+
+  @import "./infos-content";
+}

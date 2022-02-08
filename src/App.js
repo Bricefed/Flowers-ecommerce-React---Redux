@@ -1,24 +1,17 @@
+import { Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
-import Home from "./containers/Home";
-import About from "./containers/About";
-import Icons from "./containers/Icons";
-import Products from "./containers/Products";
-import Review from "./containers/Review";
-import Contact from "./containers/Contact";
+import Home from "./containers/Home/Home";
 import Footer from "./components/Footer/Footer";
+import Product from "./containers/Product/Product";
 
 function App() {
   return (
     <>
       <Navigation />
-      <main>
-        <Home />
-        <About />
-        <Icons />
-        <Products />
-        <Review />
-        <Contact />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:slug" element={<Product />} />
+      </Routes>
       <Footer />
     </>
   );

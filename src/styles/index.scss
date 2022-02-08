@@ -12,12 +12,16 @@
 @import "./components/footer/footer";
 
 // CONTAINERS
-@import "./containers/home/home";
-@import "./containers/about/about";
-@import "./containers/icons/icons";
-@import "./containers/products/products";
-@import "./containers/review/review";
-@import "./containers/contact/contact";
+// HOME
+@import "./containers/home/heroes/heroes";
+@import "./containers/home/about/about";
+@import "./containers/home/icons/icons";
+@import "./containers/home/products/products";
+@import "./containers/home/review/review";
+@import "./containers/home/contact/contact";
+
+// PRODUCT
+@import "./containers/product/product";
 
 // RESPONSIVE
 @import "./responsives/tablet/tablet";

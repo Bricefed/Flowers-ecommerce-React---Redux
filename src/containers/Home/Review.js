@@ -1,6 +1,6 @@
-import Card from "../components/Review/Card";
-import Heading from "../components/Title/Heading";
-import { dataUser } from "../components/Review/data/user";
+import Card from "../../components/Review/Card";
+import Heading from "../../components/Title/Heading";
+import { dataUser } from "../../components/Review/data/user";
 
 export default function Review() {
   const card = (item) => {

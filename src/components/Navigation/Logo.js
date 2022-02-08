@@ -1,7 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 export default function Logo() {
   return (
-    <a href="#!" className="logo">
+    <NavLink to="/#heroes" className="logo">
       flowers<span>.</span>
-    </a>
+    </NavLink>
   );
 }
