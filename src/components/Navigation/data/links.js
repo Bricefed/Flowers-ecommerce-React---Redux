@@ -1,22 +1,29 @@
+import { v4 as uuidv4 } from "uuid";
+
 export const dataLinks = [
   {
-    id: "#home",
+    id: uuidv4(),
+    link: "#home",
     name: "Accueil",
   },
   {
-    id: "#about",
+    id: uuidv4(),
+    link: "#about",
     name: "À propos",
   },
   {
-    id: "#products",
+    id: uuidv4(),
+    link: "#products",
     name: "Produits",
   },
   {
-    id: "#review",
+    id: uuidv4(),
+    link: "#review",
     name: "Avis",
   },
   {
-    id: "#contact",
+    id: uuidv4(),
+    link: "#contact",
     name: "contact",
   },
 ];

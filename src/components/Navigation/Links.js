@@ -7,7 +7,7 @@ export default function Links() {
 
   const items = (item) => {
     return (
-      <a href={item.id} key={item.id}>
+      <a key={item.id} href={item.link}>
         {item.name}
       </a>
     );

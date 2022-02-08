@@ -1,6 +1,8 @@
+import { v4 as uuidv4 } from "uuid";
+
 export const dataProduct = [
   {
-    id: 1,
+    id: uuidv4(),
     discount: "-10%",
     img: "assets/img/products/img-1.jpg",
     title: "Pot de fleur",
@@ -8,7 +10,7 @@ export const dataProduct = [
     oldPrice: "15.99",
   },
   {
-    id: 2,
+    id: uuidv4(),
     discount: "-15%",
     img: "assets/img/products/img-2.jpg",
     title: "Pot de fleur",
@@ -16,7 +18,7 @@ export const dataProduct = [
     oldPrice: "16.99",
   },
   {
-    id: 3,
+    id: uuidv4(),
     discount: "-5%",
     img: "assets/img/products/img-3.jpg",
     title: "Pot de fleur",
@@ -24,7 +26,7 @@ export const dataProduct = [
     oldPrice: "17.99",
   },
   {
-    id: 4,
+    id: uuidv4(),
     discount: "-20%",
     img: "assets/img/products/img-4.jpg",
     title: "Pot de fleur",
@@ -32,7 +34,7 @@ export const dataProduct = [
     oldPrice: "19.99",
   },
   {
-    id: 5,
+    id: uuidv4(),
     discount: "-10%",
     img: "assets/img/products/img-5.jpg",
     title: "Pot de fleur",
@@ -40,7 +42,7 @@ export const dataProduct = [
     oldPrice: "11.99",
   },
   {
-    id: 6,
+    id: uuidv4(),
     discount: "-5%",
     img: "assets/img/products/img-6.jpg",
     title: "Pot de fleur",
@@ -48,7 +50,7 @@ export const dataProduct = [
     oldPrice: "15.99",
   },
   {
-    id: 7,
+    id: uuidv4(),
     discount: "-10%",
     img: "assets/img/products/img-7.jpg",
     title: "Pot de fleur",
@@ -56,7 +58,7 @@ export const dataProduct = [
     oldPrice: "15.99",
   },
   {
-    id: 8,
+    id: uuidv4(),
     discount: "-15%",
     img: "assets/img/products/img-8.jpg",
     title: "Pot de fleur",
@@ -64,7 +66,7 @@ export const dataProduct = [
     oldPrice: "16.99",
   },
   {
-    id: 9,
+    id: uuidv4(),
     discount: "-5%",
     img: "assets/img/products/img-9.jpg",
     title: "Pot de fleur",

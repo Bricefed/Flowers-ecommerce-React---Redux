@@ -1,0 +1,25 @@
+.col {
+  flex: 1 1 25rem;
+
+  h3 {
+    color: $dark-3;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+  }
+
+  a {
+    display: block;
+    color: $dark-6;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+    &:hover {
+      color: $pink;
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    margin-top: 1rem;
+  }
+}
