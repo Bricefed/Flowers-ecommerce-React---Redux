@@ -20,6 +20,7 @@ section {
   }
 }
 
+// PRODUCTS
 .discount {
   position: absolute;
   top: 1rem;
@@ -31,7 +32,6 @@ section {
   font-size: 2rem;
   z-index: 1;
 }
-
 .price {
   font-size: 2.5rem;
   color: $pink;

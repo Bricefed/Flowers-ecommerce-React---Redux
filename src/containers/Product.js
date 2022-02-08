@@ -1,5 +1,7 @@
 import { useParams } from "react-router";
 import { dataProduct } from "../components/Home/Products/data/product";
+import Image from "../components/Product/Image";
+import Infos from "../components/Product/Infos";
 
 export default function Product() {
   const productSlug = useParams();
@@ -10,18 +12,17 @@ export default function Product() {
 
   return (
     <section className="product">
-      <div className="image">
-        <img src={product.img} alt={product.title} />
-        <span className="discount">{product.discount}</span>
-      </div>
-      <div className="infos-content">
-        <h2>{product.title}</h2>
-        <div className="price">
-          {product.newPrice} € <span>{product.oldPrice} €</span>
-        </div>
-        <p>{product.desc}</p>
-        <button className="btn">Ajouter au panier</button>
-      </div>
+      <Image
+        img={product.img}
+        title={product.title}
+        discount={product.discount}
+      />
+      <Infos
+        title={product.title}
+        newPrice={product.newPrice}
+        oldPrice={product.oldPrice}
+        desc={product.desc}
+      />
     </section>
   );
 }
