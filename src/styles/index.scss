@@ -6,11 +6,6 @@
 // BASES
 @import "./base/reset";
 
-// COMPONENTS
-@import "./components/navigation/navigation";
-@import "./components/titles/heading";
-@import "./components/footer/footer";
-
 // CONTAINERS
 // HOME
 @import "./containers/home/heroes/heroes";
@@ -21,6 +16,11 @@
 @import "./containers/home/contact/contact";
 // PRODUCT
 @import "./containers/product/product";
+
+// COMPONENTS
+@import "./components/navigation/navigation";
+@import "./components/titles/heading";
+@import "./components/footer/footer";
 
 // RESPONSIVE
 @import "./responsives/tablet/tablet";

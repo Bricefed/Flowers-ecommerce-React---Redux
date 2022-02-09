@@ -1,3 +1,5 @@
+import AddToCart from "./AddToCart";
+
 export default function Infos({ title, newPrice, oldPrice, desc }) {
   return (
     <div className="infos-content">
@@ -6,7 +8,7 @@ export default function Infos({ title, newPrice, oldPrice, desc }) {
         {newPrice} € <span>{oldPrice} €</span>
       </div>
       <p>{desc}</p>
-      <button className="btn">Ajouter au panier</button>
+      <AddToCart />
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.fa-shopping-cart {
+  position: relative;
+
+  span {
+    position: absolute;
+    top: 0;
+    background: $pink;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+    color: white;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
