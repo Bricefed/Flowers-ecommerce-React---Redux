@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { dataProduct } from "../components/Home/Products/data/product";
 import Image from "../components/Product/Image";
 import Footer from "../components/Footer/Footer";
-// import Infos from "../components/Product/Infos";
+import Infos from "../components/Product/Infos";
 
 export default function Product() {
   const [nbProduct, setNbProduct] = useState(1);
@@ -58,22 +58,16 @@ export default function Product() {
     <>
       <section className="product">
         <Image
-          img={product.img}
+          img={process.env.PUBLIC_URL + product.img}
           title={product.title}
           discount={product.discount}
         />
-        {/* <Infos
-        title={product.title}
-        newPrice={product.newPrice}
-        oldPrice={product.oldPrice}
-        desc={product.desc}
-      /> */}
-        <div className="infos-content">
-          <h2>{product.title}</h2>
-          <div className="price">
-            {product.newPrice} € <span>{product.oldPrice} €</span>
-          </div>
-          <p>{product.desc}</p>
+        <Infos
+          title={product.title}
+          newPrice={product.newPrice}
+          oldPrice={product.oldPrice}
+          desc={product.desc}
+        >
           <form onSubmit={addToCart}>
             <input
               type="number"
@@ -88,11 +82,12 @@ export default function Product() {
               Ajouter au panier
             </button>
           </form>
-        </div>
+        </Infos>
         <span ref={addingInfo} className="message-flash">
           <strong>{product.title}</strong> <em>+{nbProduct}</em> dans le panier
         </span>
       </section>
+
       <Footer />
     </>
   );

@@ -1,6 +1,4 @@
-import AddToCart from "./AddToCart";
-
-export default function Infos({ title, newPrice, oldPrice, desc }) {
+export default function Infos({ title, newPrice, oldPrice, desc, children }) {
   return (
     <div className="infos-content">
       <h2>{title}</h2>
@@ -8,7 +6,7 @@ export default function Infos({ title, newPrice, oldPrice, desc }) {
         {newPrice} € <span>{oldPrice} €</span>
       </div>
       <p>{desc}</p>
-      <AddToCart />
+      {children}
     </div>
   );
 }

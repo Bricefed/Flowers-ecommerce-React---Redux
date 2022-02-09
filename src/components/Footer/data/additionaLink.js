@@ -8,7 +8,7 @@ export const dataAdditionaLink = [
   },
   {
     id: uuidv4(),
-    link: "#PANIER",
+    link: "/cart",
     name: "Mon panier",
   },
   {

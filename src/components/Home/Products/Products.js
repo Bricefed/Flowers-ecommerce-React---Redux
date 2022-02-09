@@ -9,7 +9,7 @@ export default function Products() {
         key={item.id}
         slug={item.slug}
         discount={item.discount}
-        img={item.img}
+        img={process.env.PUBLIC_URL + item.img}
         title={item.title}
         newPrice={item.newPrice}
         oldPrice={item.oldPrice}

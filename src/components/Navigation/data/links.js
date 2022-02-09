@@ -24,6 +24,6 @@ export const dataLinks = [
   {
     id: uuidv4(),
     link: "#contact",
-    name: "contact",
+    name: "Contact",
   },
 ];

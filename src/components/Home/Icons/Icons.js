@@ -6,7 +6,7 @@ export default function Icons() {
     return (
       <Icon
         key={item.id}
-        img={item.img}
+        img={process.env.PUBLIC_URL + item.img}
         title={item.title}
         subtitle={item.subtitle}
       />

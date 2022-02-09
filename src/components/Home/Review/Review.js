@@ -7,7 +7,7 @@ export default function Review() {
     return (
       <Card
         key={item.id}
-        img={item.img}
+        img={process.env.PUBLIC_URL + item.img}
         name={item.name}
         subtitle={item.subtitle}
         review={item.review}

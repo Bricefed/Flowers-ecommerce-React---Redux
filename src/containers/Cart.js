@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import BtnPayement from "../components/Cart/BtnPayement";
 import Heading from "../components/Title/Heading";
+import Item from "../components/Cart/Item";
 
 export default function Cart() {
   const storeState = useSelector((state) => state);
@@ -31,32 +32,23 @@ export default function Cart() {
 
   const item = (item) => {
     return (
-      <li key={item.id}>
-        <div className="col">
-          <div className="image">
-            <img
-              src={process.env.PUBLIC_URL + `${item.img}`}
-              alt={item.title}
-            />
-          </div>
-          <div className="infos">
-            <h4>{item.title}</h4>
-            <p className="price">{item.newPrice} €</p>
-          </div>
-        </div>
-        <div className="input">
-          <label htmlFor="qtyInput">Quantité</label>
-          <input
-            type="number"
-            min="1"
-            max="10"
-            id="qtyInput"
-            className="qty"
-            value={item.qty}
-            onChange={(e) => hangleChange(e, item.id)}
-          />
-        </div>
-      </li>
+      <Item
+        id={item.id}
+        img={item.img}
+        title={item.title}
+        newPrice={item.newPrice}
+        qty={item.qty}
+      >
+        <input
+          type="number"
+          min="1"
+          max="10"
+          id="qtyInput"
+          className="qty"
+          value={item.qty}
+          onChange={(e) => hangleChange(e, item.id)}
+        />
+      </Item>
     );
   };
 
@@ -67,11 +59,7 @@ export default function Cart() {
       <p className="total-price">
         Total : <span className="price">{totalPrice.toFixed(2)} €</span>
       </p>
-      <div className="tac">
-        <a href="#!" className="btn">
-          Procéder au payment
-        </a>
-      </div>
+      {totalPrice > 0 && <BtnPayement />}
     </section>
   );
 }
