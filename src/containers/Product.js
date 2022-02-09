@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { useDispatch } from "react-redux";
 import { dataProduct } from "../components/Home/Products/data/product";
 import Image from "../components/Product/Image";
+import Footer from "../components/Footer/Footer";
 // import Infos from "../components/Product/Infos";
 
 export default function Product() {
@@ -54,41 +55,45 @@ export default function Product() {
   const product = productDetail[0];
 
   return (
-    <section className="product">
-      <Image
-        img={product.img}
-        title={product.title}
-        discount={product.discount}
-      />
-      {/* <Infos
+    <>
+      <section className="product">
+        <Image
+          img={product.img}
+          title={product.title}
+          discount={product.discount}
+        />
+        {/* <Infos
         title={product.title}
         newPrice={product.newPrice}
         oldPrice={product.oldPrice}
         desc={product.desc}
       /> */}
-      <div className="infos-content">
-        <h2>{product.title}</h2>
-        <div className="price">
-          {product.newPrice} € <span>{product.oldPrice} €</span>
+        <div className="infos-content">
+          <h2>{product.title}</h2>
+          <div className="price">
+            {product.newPrice} € <span>{product.oldPrice} €</span>
+          </div>
+          <p>{product.desc}</p>
+          <form onSubmit={addToCart}>
+            <input
+              type="number"
+              min="1"
+              max="10"
+              id="qty"
+              className="qty"
+              value={nbProduct}
+              onChange={updateNbProduct}
+            />
+            <button type="submit" className="btn">
+              Ajouter au panier
+            </button>
+          </form>
         </div>
-        <p>{product.desc}</p>
-        <form onSubmit={addToCart}>
-          <input
-            type="number"
-            min="1"
-            max="10"
-            id="qty"
-            value={nbProduct}
-            onChange={updateNbProduct}
-          />
-          <button type="submit" className="btn">
-            Ajouter au panier
-          </button>
-        </form>
-      </div>
-      <span ref={addingInfo} className="message-flash">
-        <strong>{product.title}</strong> <em>+{nbProduct}</em> dans le panier
-      </span>
-    </section>
+        <span ref={addingInfo} className="message-flash">
+          <strong>{product.title}</strong> <em>+{nbProduct}</em> dans le panier
+        </span>
+      </section>
+      <Footer />
+    </>
   );
 }

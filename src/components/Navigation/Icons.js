@@ -12,7 +12,7 @@ export default function Icons() {
   return (
     <div className="icons">
       <NavLink to="#!" className="fa fa-heart"></NavLink>
-      <NavLink to="#!" className="fa fa-shopping-cart">
+      <NavLink to="/cart" className="fa fa-shopping-cart">
         <span>{totalItems}</span>
       </NavLink>
       <NavLink to="#!" className="fa fa-user"></NavLink>

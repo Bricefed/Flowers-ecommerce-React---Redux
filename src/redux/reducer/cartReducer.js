@@ -33,7 +33,16 @@ export default function cartReducer(state = INITIAL_STATE, action) {
       }
       break;
     case "UPDATEITEM":
-      return {};
+      const indexItemUpdate = state.cart.findIndex(
+        (x) => x.id === action.payload.id
+      );
+
+      const newArr = [...state.cart];
+      newArr.splice(indexItemUpdate, 1, action.payload);
+
+      return {
+        cart: newArr,
+      };
       break;
     // default
     // break
